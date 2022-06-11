@@ -1,0 +1,12 @@
+exposcicion 100
+
+balance de luz 65
+brillo -14
+contraste 18
+destacado 72
+sombra 18
+saturacion 56
+matiz -12
+temperatura -13
+
+exposcision 23
