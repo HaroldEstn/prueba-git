@@ -75,19 +75,23 @@ if __name__ == '__main__':
             mascotasxid[ident] = mas
             ident += 1
         elif opt == "2":
+            """Aqui mostramos todas las mascotas que tiene un cliente"""
             cedula = input("por favor ingrese la cédula del dueño: ")
             cli = clientes[cedula]
             mas = mascotas[cedula]
             print("Representacion de Datos")
             cli.mostrar_cliente()
-            for element in mas:
-                element.mostrar_mascota()
+            # Tenemos un bucle aqui abajito
+            print("Aqui quiero agregar un bucle")
+            for elm in mas:
+                elm.mostrar_mascota()
             print("\n\n\n")
         elif opt == "3":
+            """No se me occurren muchos cambios para hacer pruebas y ver como esta funcionando correctamente. """
             print("\n\n////////Mascotas por edad.////")
             ordenar = sorted(sort.items(), key=lambda x:x[1], reverse=False)
-            for element in ordenar:
-                mascotasxid[element[0]].mostrar_mascota()
+            for elm in ordenar:
+                mascotasxid[elm[0]].mostrar_mascota()
         elif opt == "0":
             print("Saliendo...")
         else:
