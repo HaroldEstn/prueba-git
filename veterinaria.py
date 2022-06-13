@@ -82,16 +82,26 @@ if __name__ == '__main__':
             print("Representacion de Datos")
             cli.mostrar_cliente()
             # Tenemos un bucle aqui abajito
+<<<<<<< HEAD
             print("Aqui quiero agregar un bucle")
             for elm in mas:
                 elm.mostrar_mascota()
+=======
+            for element in mas:
+                element.mostrar_mascota()
+>>>>>>> refs/remotes/origin/main
             print("\n\n\n")
         elif opt == "3":
             """No se me occurren muchos cambios para hacer pruebas y ver como esta funcionando correctamente. """
             print("\n\n////////Mascotas por edad.////")
             ordenar = sorted(sort.items(), key=lambda x:x[1], reverse=False)
+<<<<<<< HEAD
             for elm in ordenar:
                 mascotasxid[elm[0]].mostrar_mascota()
+=======
+            for elemento in ordenar:
+                mascotasxid[elemento[0]].mostrar_mascota()
+>>>>>>> refs/remotes/origin/main
         elif opt == "0":
             print("Saliendo...")
         else:
